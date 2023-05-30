@@ -1,0 +1,159 @@
+body {
+  margin-top: 43vh;
+  overflow-x: hidden;
+}
+.strona-klima {
+  display: grid;
+  margin-top: 2vh;
+  grid-template-columns: 50vw 50vw;
+  margin-bottom: -20vh;
+  /* width: 80vw; */
+}
+.fota {
+  width: 50vw;
+  height: auto;
+}
+.fota2 {
+  width: 50vw;
+  height: auto;
+}
+.fota3 {
+  width: 50vw;
+  height: auto;
+  transform: translatey(-0.3em);
+}
+.tekst {
+  display: grid;
+  align-content: center;
+  padding-left: 10vw;
+  padding-right: 5vw;
+  margin-bottom: 0;
+}
+.tekst p,
+.tekst2 p ul {
+  text-align: left;
+}
+#photozakres {
+  margin-left: 15vw;
+}
+
+#margin-list li {
+  padding-bottom: 0.7vh;
+  text-align: left;
+  margin-left: 1.9em;
+}
+#first-letter {
+  justify-content: center;
+  margin-bottom: 4vh;
+}
+#head-klim {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0vh;
+}
+#title-klim {
+  position: absolute;
+  font-size: 3.5em;
+  transform: translateY(7.5vh);
+  color: white;
+}
+.tekst div h3,
+.tekst div p {
+  margin-left: 1vw;
+}
+.tekst div h3 {
+  margin-top: 1vh;
+}
+.tekst div h3,
+.tekst h3 {
+  color: rgb(48, 52, 236);
+  display: flex;
+  justify-items: start;
+  font-size: 1.5em;
+  padding-bottom: 0.25em;
+}
+.tekst p {
+  padding-bottom: 1em;
+}
+p,
+li {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+#footer-2 {
+  margin-top: -28vh;
+}
+
+@media screen and (max-width: 1429px) {
+  .strona-klima {
+    display: block;
+    width: 100%;
+  }
+  #photozakres {
+    display: none;
+  }
+  .tekst {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1429px) {
+  .strona-klima {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #photozakres {
+    display: none;
+  }
+  .tekst {
+    margin: 2vh 5vw;
+  }
+  #first-letter {
+    order: -1;
+  }
+  #fota1 {
+    order: 1;
+    align-items: center;
+    text-align: center;
+  }
+  #twice-letter {
+    order: 3;
+  }
+  #fota2 {
+    order: 4;
+  }
+  #third-letter {
+    order: 5;
+  }
+  #fota3 {
+    order: 6;
+    margin-bottom: 5vh;
+  }
+  #mont-klim-head {
+    margin-left: 1.2vw;
+  }
+  #serw-klim-head {
+    margin-left: 1.2vw;
+  }
+}
+@media screen and (max-width: 415px) {
+  #footer-2 {
+    margin-top: -16vh;
+    /* background-color: red; */
+    /* display: none; */
+  }
+
+  .fota {
+    width: 100vw;
+    height: auto;
+  }
+  .fota2 {
+    width: 100vw;
+    height: auto;
+  }
+  .fota3 {
+    width: 100vw;
+    height: auto;
+  }
+}

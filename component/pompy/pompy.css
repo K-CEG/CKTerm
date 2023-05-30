@@ -1,0 +1,148 @@
+html {
+  max-width: 100%;
+}
+body {
+  margin: 0;
+}
+#title {
+  display: flex;
+  width: 100vw;
+  padding: 2vh 0;
+  /* background-color: red; */
+  justify-content: center;
+  position: absolute;
+  /* transform: translateX(35vw) translateY(-32vh); */
+  /* transform: translateY(-35vw); */
+  font-size: 4em;
+}
+#bcg-ph-pump {
+  height: 10vh;
+  width: 100%;
+}
+.main-pump {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: 60vh 60vh 60vh;
+  justify-items: center;
+  align-items: center;
+  padding-top: 3vh;
+  margin-bottom: 7vh;
+}
+.main-pump div {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+.main-pump p {
+  justify-content: start;
+  text-align: start;
+}
+#headerimgpump {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 45vh;
+  object-fit: fill;
+  /* object-fit: contain; */
+
+  /* object-position: top right; */
+}
+.main-pump h2 {
+  color: rgb(48, 52, 236);
+  display: flex;
+  justify-items: start;
+  font-size: 1.5em;
+  padding-bottom: 0.5em;
+}
+.tekst-pompy {
+  display: grid;
+}
+#tekst-pump-one {
+  margin-bottom: 1em;
+}
+p {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+#fota-pompa {
+  padding: 0;
+}
+.fota-pompa3 {
+  margin-top: 2.8vh;
+}
+.fota-pompa2 {
+  margin-top: -0.8vh;
+}
+@media screen and (max-width: 1430px) {
+  .main-pump {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6vh;
+  }
+  #first-letter-pump {
+    order: -4;
+    margin: 3vh 2vw;
+  }
+  #first-photo-pump {
+    order: -3;
+    width: 50%;
+  }
+  #twice-letter-pump {
+    order: -2;
+    margin: 3vh 2vw;
+  }
+  .twice-photo-pump {
+    order: -1;
+    width: 50%;
+    margin: 0;
+  }
+  #third-letter-pump {
+    order: 2;
+    margin: 3vh 2vw;
+  }
+  .third-photo-pump {
+    order: 10;
+    width: auto;
+    height: 50%;
+    margin: 0;
+  }
+}
+#footer-3 {
+  margin-top: -30vh;
+}
+
+@media screen and (max-width: 415px) {
+  #headerimgpump {
+    margin-top: 42.5vh;
+    object-fit: contain;
+    /* object-position: top right; */
+    height: auto;
+  }
+
+  #first-photo-pump {
+    order: -3;
+    width: 100%;
+  }
+
+  .twice-photo-pump {
+    order: -1;
+    width: 100%;
+    margin: 0;
+  }
+  .third-photo-pump {
+    order: 10;
+    width: 100%;
+    margin: 0;
+  }
+
+  #footer-3 {
+    margin-top: -36vh;
+  }
+  .main-pump {
+    padding-top: 0vh;
+  }
+}

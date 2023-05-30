@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moja strona</title>
+    <link rel="stylesheet" href="component/witamy/witamy.css" />
+    <link rel="stylesheet" href="component/klimatyzatory/klimatyzatory.css" />
+    <link rel="stylesheet" href="component/pompy/pompy.css" />
+    <link rel="stylesheet" href="component/wentylacja/wentylacja.css" />
+    <link rel="stylesheet" href="component/kontakt/kontakt.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,900"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="nav-logo-hamb">
+        <a
+          href="#"
+          class="logo"
+          onclick="loadTab('component/witamy/witamy.html','tab1' )"
+          ><img
+            src="SVG/Logo_standard_transparent.svg"
+            alt="Logo"
+            height="150px"
+            width="500px"
+        /></a>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+      <ul class="navigation">
+        <li id="nav1">
+          <form action="witamy.html">
+            <a
+              href="#"
+              class="nav-link"
+              value="Witamy"
+              type="submit"
+              onclick="loadTab('component/witamy/witamy.html','tab1' )"
+              >Witamy</a
+            >
+          </form>
+        </li>
+        <li id="nav2">
+          <form action="klimatyzacja.html">
+            <a
+              href="#klimatyzacja"
+              class="nav-link"
+              value="Klimatyzatory"
+              type="submit"
+              onclick="loadTab('component/klimatyzatory/klimatyzatory.html', 'tab2')"
+              >Klimatyzacja</a
+            >
+          </form>
+        </li>
+        <li id="nav3">
+          <form action="klimatyzacja.html">
+            <a
+              href="#pompy_ciepla"
+              class="nav-link"
+              id="pompycieplamsg"
+              value="Pompy_ciepła"
+              type="submit"
+              onclick="loadTab('component/pompy/pompy.html', 'tab3')"
+              >Pompy ciepła</a
+            >
+          </form>
+        </li>
+        <li id="nav4">
+          <form action="wentylacja.html">
+            <a
+              href="#wentylacja"
+              class="nav-link"
+              value="wentylacja"
+              type="submit"
+              onclick="loadTab('component/wentylacja/wentylacja.html', 'tab4')"
+              >Wentylacja</a
+            >
+          </form>
+        </li>
+        <li id="nav5">
+          <form action="kontakt.html">
+            <a
+              href="#kontakt"
+              class="nav-link"
+              id="kontakt"
+              value="kontakt"
+              type="submit"
+              onclick="loadTab('component/kontakt/kontakt.html', 'tab5')"
+              >Kontakt</a
+            >
+          </form>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <div class="start-page" id="start">
+        <img
+          src="./photo/główna/glowna-mniejsze/iStock-1182206292 (2).jpg"
+          class="imagewitaj"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,900"
+          rel="stylesheet"
+          type="text/css"
+        />
+        <div class="moving-letters">
+          <h1 class="ml5">
+            <span class="text-wrapper">
+              <span class="line line1"></span>
+              <span class="letters letters-left">Klimatyzacja</span>
+              <span class="letters ampersand">|</span>
+              <span class="letters letters-right">Pompy ciepła</span>
+              <span id="blank-sign" class="letters ampersand">|</span>
+              <span id="went-dist" class="letters letters-right"
+                >Wentylacja</span
+              >
+              <span class="line line2"></span>
+            </span>
+          </h1>
+        </div>
+      </div>
+      <div id="content"></div>
+      <div class="start-page-2" id="start2">
+        <div id="welcome-photo">
+          <img
+            id="first-welcome-photo"
+            src="/photo/główna/glowna-mniejsze/air-repair-mechanic-using-measuring-equipment-filling-industrial-factory-air-conditioners-checking-maintenance-outdoor-air-compressor-unit (1).jpg"
+            width="90%"
+            height="auto"
+          />
+          <img
+            id="twice-welcome-photo"
+            class="photostart"
+            src="/photo/główna/glowna-mniejsze/close-up-heat-pump-outside-home (2).jpg"
+            width="90%"
+            height="auto"
+          />
+          <img
+            id="third-welcome-photo"
+            width="90%"
+            media="min-width: 1100px"
+            height="auto"
+            src="/photo/główna/glowna-mniejsze/male-technician-overalls-blue-cap-repairs-air-conditioner-wall.jpg"
+          />
+          <img
+            id="fourth-welcome-photo"
+            width="90%"
+            media="min-width: 1100px"
+            height="auto"
+            src="/photo/główna/glowna-mniejsze/technician-service-removing-air-filter-air-conditioner-cleaning.jpg"
+          />
+          <img
+            id="fifth-welcome-photo"
+            width="90%"
+            media="min-width: 1100px"
+            height="auto"
+            src="/photo/główna/glowna-mniejsze/young-happy-woman-with-closed-eyes-sitting-sofa-air-conditioning-adjusting-comfortable-temperature-with-remote-control-modern-home.jpg"
+          />
+          <img
+            id="sixth-welcome-photo"
+            width="90%"
+            media="min-width: 1100px"
+            height="auto"
+            src="/photo/główna/glowna-mniejsze/close-up-worker-operating-industrial-machine-factory.jpg"
+          />
+          <img
+            id="seventh-welcome-photo"
+            width="90%"
+            media="min-width: 1100px"
+            height="auto"
+            src="/photo/główna/glowna-mniejsze/close-up-ventilation-system (3).jpg"
+          />
+          <img
+            id="eight-welcome-photo"
+            width="90%"
+            media="min-width: 1100px"
+            height="auto"
+            src="/photo/główna/glowna-mniejsze/klimatyzator-wewnetrzny-w-pokoju-z-bialym-fotelem.jpg"
+          />
+          <img
+            id="nineth-welcome-photo"
+            width="90%"
+            media="min-width: 1100px"
+            height="auto"
+            src="/photo/główna/glowna-mniejsze/close-up-ventilation-system (5).jpg"
+          />
+        </div>
+        <div class="conaswyroznia">
+          <h2>Co nas wyróżnia?</h2>
+          <div id="estetyka-wykonania">
+            <h5>Estetyka wykonania</h5>
+            <p>
+              Dzięki naszej dbałości o higienę i estetykę, nasi klienci
+              otrzymują nie tylko urządzenia klimatyzacyjne wysokiej jakości,
+              ale również profesjonalnie wykonane usługi, które pozytywnie
+              wpływają na jakość powietrza i estetykę wnętrza.
+            </p>
+          </div>
+          <div id="fachowe-wsparcie">
+            <h5>Fachowe wsparcie</h5>
+            <p>
+              Nasi specjaliści pomogą w doborze odpowiedniego urządzenia,
+              dostosowanego do indywidualnych potrzeb. Przy wyborze klimatyzacji
+              kierujemy się takimi czynnikami, jak wielkość pomieszczenia,
+              rodzaj pomieszczenia, poziom hałasu, efektywność energetyczna i
+              wiele innych.
+            </p>
+          </div>
+          <div id="gwarancja">
+            <h5>Gwarancja do 5 lat</h5>
+            <p>
+              Jako firma stawiająca na jakość, nie oferujemy taniej tandety a
+              jedynie wysokiej klasy, markowe klimatyzatory, których jesteśmy w
+              100% pewni. Na większość z nich producent daje aż do 5 lat
+              gwarancji gdyż ten sprzęt po prostu się nie psuje!
+            </p>
+          </div>
+          <div id="serwis-gwar">
+            <h5>
+              Serwis gwarancyjny <br />
+              i pogwarancyjny
+            </h5>
+            <p>
+              Nasza firma zapewnia kompleksową obsługę, która obejmuje regularne
+              przeglądy, konserwację, naprawy i wymiany uszkodzonych części.
+              Dzięki temu naszym klientom jesteśmy w stanie zapewnić niezawodną
+              i długotrwałą pracę klimatyzacji.
+            </p>
+          </div>
+          <div id="terminowe-realizacje">
+            <h5>Terminowe realizacje</h5>
+            <p>
+              Procedura jest bardzo prosta. Państwo do nas dzwonią.
+              Przyjeżdżamy, oglądamy, doradzamy. Państwo się decydują, umawiamy
+              termin montażu. Przyjeżdżamy ponownie, powiercimy, przykręcimy i
+              gotowe. Zlecenia realizujemy w ciągu 3 dni od pierwszego kontaktu.
+            </p>
+          </div>
+          <div id="szeroka-oferta">
+            <h5>Szeroka oferta</h5>
+            <p>
+              Jesteśmy dumni z naszej szerokiej oferty urządzeń, które
+              zapewniają optymalną temperaturę i jakość powietrza w Twoim domu
+              lub miejscu pracy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="stopka">
+      <img
+        height="310vh"
+        width="100%"
+        src="photo/stopka/natural-marble-pattern-background.jpg"
+      />
+      <div class="footer">
+        <div class="last-footer-msg1">
+          <ul>
+            <li id="brand-name">Krzysztof Cegiełko CKTerm</li>
+            <!-- <li>Stężycka 62/23</li> -->
+            <li>80-174 Gdańsk</li>
+            <li>NIP: 5833477295</li>
+          </ul>
+        </div>
+        <!-- object-fit="contain" -->
+        <div class="last-footer-msg2">
+          <img height="100vh" width="100%" src="SVG/Logo_mod_transparent.svg" />
+        </div>
+        <div class="last-footer-msg3">
+          <ul>
+            <li>pon-pt 8:00-16:00</li>
+            <li>biuro@ckterm.pl</li>
+            <li>+48 730 130 396</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script
+    defer
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"
+  ></script>
+  <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"
+  ></script>
+  <script defer src="main.js"></script>
+</html>
